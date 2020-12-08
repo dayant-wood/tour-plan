@@ -494,7 +494,7 @@ template {
 
 .hotel-info__name {
   margin-top: 4px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .hotel-info__description {
@@ -518,10 +518,6 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
-}
-
-.hotel-grid {
-  margin-top: 20px;
 }
 
 .stars {
