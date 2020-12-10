@@ -523,6 +523,13 @@ template {
 .hotel-grid {
   display: flex;
   justify-content: space-between;
+  align-items: top;
+}
+
+.hotel__small-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .stars {
@@ -704,6 +711,12 @@ template {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1200px) {
