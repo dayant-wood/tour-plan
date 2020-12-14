@@ -913,6 +913,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   width: 730px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -921,6 +922,56 @@ template {
   background-color: #fff;
   border-radius: 8px;
   margin: 45px auto 0;
+  padding: 0 62px 0 62px;
+}
+
+.reviews-slider__item::before {
+  content: '';
+  width: 70px;
+  height: 48px;
+  top: 13px;
+  left: 62px;
+  position: absolute;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__item::after {
+  content: '';
+  width: 70px;
+  height: 48px;
+  top: 118px;
+  right: 62px;
+  position: absolute;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99;
+  outline: none;
+}
+
+.reviews-slider__button--prev {
+  background-image: url(../img/arrow-prev-secondary.svg);
+  left: 0;
+}
+
+.reviews-slider__button--next {
+  background-image: url(../img/arrow-next-secondary.svg);
+  right: 0;
 }
 
 .reviews-slider__profile {
@@ -935,6 +986,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
+  margin-bottom: 19px;
 }
 
 .reviews-slider__avatar {
@@ -943,6 +995,42 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 9px;
+}
+
+.reviews-slider__username {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin-bottom: 10px;
+}
+
+.reviews-slider__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+
+.reviews-slider__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-slider__text {
+  max-width: 537px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {

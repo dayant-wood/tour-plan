@@ -12,18 +12,84 @@
     &__item
       display: flex
       align-items: center
+      position: relative
       width: 730px
       flex-direction: column
       background-color: #fff
       border-radius: 8px
       margin: 45px auto 0
+      padding: 0 62px 0 62px
+      &::before
+        content: ''
+        width: 70px
+        height: 48px
+        top: 13px
+        left: 62px
+        position: absolute
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        width: 70px
+        height: 48px
+        top: 118px
+        right: 62px
+        position: absolute
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      outline: none
+      &--prev
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 0
+
+      &--next
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 0
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
+      margin-bottom: 19px
     &__avatar
       width: 90px
       height: 90px
       object-fit: cover
       border-radius: 50%
+      margin-bottom: 9px
+    &__username
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-bottom: 10px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__rating
+      display: flex
+      align-items: center
+    &__text
+      max-width: 537px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
