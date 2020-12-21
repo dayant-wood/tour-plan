@@ -792,6 +792,44 @@ template {
   border: none;
 }
 
+.grid {
+  padding: 40px 0 70px 0;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.grid__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.grid-element {
+  height: 500px;
+  display: inline-flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-element--1 {
+  grid-column: 1/ span 2;
+}
+
+.grid-element--2, .grid-element--3, .grid-element--4, .grid-element--5 {
+  width: 350px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

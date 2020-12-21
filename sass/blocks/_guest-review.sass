@@ -1,0 +1,29 @@
+.grid
+  padding: 40px 0 70px 0
+  max-width: 1140px
+  margin: auto
+  &-container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 30px
+  &__title
+    text-align: center
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+  &-element
+    height: 500px
+    display: inline-flex
+    border: 1px solid black
+    align-items: center
+    justify-content: center
+  &-element--1
+    grid-column: 1/ span 2
+  &-element--2,
+  &-element--3,
+  &-element--4,
+  &-element--5
+    width: 350px
