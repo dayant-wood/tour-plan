@@ -90,12 +90,22 @@
       &-form
         grid-row: 4
         grid-column: span 5
+  .modal
+    &__container
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: start
+    &__button
+      order: 5
+      margin-top: 15px
+
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
   body
-    padding-top: 78px
+    padding-top: 66px
+
   .navbar
     &__mobile
       &--fixed
@@ -103,7 +113,7 @@
         left: 0
         right: 0
         top: 0
-        z-index: 155
+        z-index: 90
     &__user, &__search
       &--mobile
         &--hidden
@@ -118,7 +128,7 @@
       position: fixed
       left: 0
       right: 0
-      top: 78px
+      top: 66px
       padding-top: 30px
       bottom: 0
       &--visible
@@ -226,7 +236,14 @@
   .footer
     &__input
       flex-basis: 100%
-
+  .modal
+    &__dialog
+      padding: 30px 40px
+      // margin-top: 40px
+      overflow-y: auto
+      max-height: 100%
+    &__input, &__message
+      font-size: 11px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -293,13 +310,13 @@
         grid-row: 7
         grid-column: 1
 
-      &__container
-        justify-content: space-between
-        flex-direction: column
-        align-items: start
-    .bottom
-      &__link
-        font-size: 11px
+    &__container
+      justify-content: space-between
+      flex-direction: column
+      align-items: start
+  .bottom
+    &__link
+      font-size: 11px
 
 @media ( max-width: 390px )
   .navbar
@@ -308,8 +325,6 @@
     &-menu
       &--visible
         top: 70px
-  .container
-    margin: 0
   .subscribe__form
     width: 250px
   .activities
