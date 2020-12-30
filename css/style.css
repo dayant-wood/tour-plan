@@ -1587,7 +1587,7 @@ template {
     flex-basis: 100%;
   }
   .modal__dialog {
-    padding: 30px 40px;
+    padding: 25px 30px;
     overflow-y: auto;
     max-height: 100%;
   }
@@ -1738,6 +1738,9 @@ template {
   }
   .bottom__item {
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    padding: 15px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
