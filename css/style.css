@@ -1231,6 +1231,17 @@ template {
   margin-right: 20px;
 }
 
+.footer__phone-links {
+  text-decoration: none;
+  color: #BDBDBD;
+  display: contents;
+}
+
+.footer__mail-link {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;

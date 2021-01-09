@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -564,9 +566,9 @@
                 ><img src="img/instagram-icon.svg" alt="icon: instagram"
               /></a>
             </div>
-            <!-- /.footer-socials footer__socials--links -->
+            <!-- /.footer-socials footer__socials -->
           </div>
-          <!-- /.footer__social--network -->
+          <!-- /.footer__social-network -->
 
           <div class="footer__list footer__legal">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
@@ -613,10 +615,23 @@
                   />
                 </div>
 
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__working-hours">
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer__phone-links">269 1500</a>
+                  <br />
+
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer__phone-links"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm)
+                  <br />
+                  Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer__phone-links"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -626,7 +641,11 @@
                     class="footer__icon"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="footer__mail-link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
             <!-- /.footer__ul -->
@@ -647,7 +666,7 @@
               </div>
               <div class="footer__input-group">
                 <input
-                  type="phone"
+                  type="tel"
                   class="input footer__input phone-input"
                   placeholder="Phone Number*"
                   name="phone"
@@ -697,7 +716,7 @@
         <a href="#" class="modal__close">
           <img src="img/close-icon.svg" alt="icon: close" />
         </a>
-        <h3 class="modal__title modal_title--mb-3">Booking</h3>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
@@ -708,7 +727,7 @@
             minlength="18"
           />
           <input
-            type="phone"
+            type="tel"
             class="input modal__input phone-input"
             placeholder="Phone Number*"
             name="phone"
