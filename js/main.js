@@ -81,16 +81,20 @@ closeModalButton.on("click", closeModal);
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "Your email address must be in the format of name@domain.com",
     },
-     phone: {
-       required: "Please, specify your phone number",
-       minlength: "Please, enter the full number",
-     },
-  }
+    phone: {
+      required: "Please, specify your phone number",
+      minlength: "Please, enter the full number",
+    },
+    sub_mail: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    }, 
+  },
       
 });
-})
+});
 
-  $(".phone-input").mask("+7(000) 000-00-00");
+  $(".phone-input").mask("+7 (000) 000-00-00");
 });

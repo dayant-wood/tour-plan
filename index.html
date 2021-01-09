@@ -208,7 +208,7 @@
                   alt="slide"
                 />
               </div>
-              <div class="swiper hotel-slider__item">
+              <div class="swiper-slide hotel-slider__item">
                 <img
                   src="img/hotel-6.jpg"
                   class="hotel-slider__image"
@@ -301,13 +301,14 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
+          class="form subscribe newsletter__subscribe"
         >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="sub_mail"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -637,7 +638,7 @@
               <div class="footer__input-group">
                 <input
                   type="text"
-                  class="input footer__input phone-input"
+                  class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
                   required
@@ -711,12 +712,12 @@
             class="input modal__input phone-input"
             placeholder="Phone Number*"
             name="phone"
-            required
             minlength="18"
+            required
           />
           <input
             type="email"
-            class="input modal__input phone-input"
+            class="input modal__input"
             placeholder="Email*"
             name="email"
             required
