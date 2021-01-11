@@ -1,5 +1,7 @@
 *
   box-sizing: border-box
+  &:focus
+    outline: none
 
 body
   font-family: "Mulish", sans-serif
@@ -13,7 +15,7 @@ body
 img
   max-width: 100%
 
-.input
+input
   background: #FFFFFF
   border-radius: 4px
   border: none
@@ -21,7 +23,7 @@ img
   height: 50px
   font-style: normal
   font-weight: normal
-  font-size: 12px
+  font-size: 12px!important
   line-height: 15px
   outline: none
 
@@ -51,8 +53,21 @@ img
   line-height: 15px
   outline: none
   cursor: pointer
+  white-space: nowrap
 
 .invalid
   color: $primary
   border-bottom: 1px solid $primary
   font-size: 13px
+
+@media (min-width: 992px)
+  button
+    transition: 0.4s
+    &:hover
+      box-shadow: 0 0 12px $primary
+      color: #ffffe0
+      cursor: pointer
+  a
+    transition: 0.4s
+    &:hover
+      color: #ffffbc

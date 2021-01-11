@@ -50,7 +50,12 @@
       width: 100%
   .booking, .map
     width: 340px
+  .newsletter
+    padding-top: 53px
   .reviews
+    &__title
+      font-size: 30px
+      margin-bottom: 48px
     &-slider
       &__item
         max-width: 580px
@@ -64,15 +69,20 @@
     &__card
       margin-bottom: 20px
   .footer
+    padding-top: 40px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+    &__form
+      margin-bottom: 50px
     &__input
       &-group
         flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
+      width: 104px
+      height: 120px
     &__social
       &-network
         grid-row: 1 / 2
@@ -92,6 +102,7 @@
       &-form
         grid-row: 4
         grid-column: span 5
+
   .modal
     &__container
       flex-direction: column
@@ -101,7 +112,7 @@
       order: 5
       margin-top: 15px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -235,10 +246,18 @@
   .card
     width: 49%
     height: 255px
-  .footer
     &__input
       &-group
         flex-basis: 100%
+  .footer
+    &__input
+      font-size: 12px
+  .bottom
+    flex-direction: column
+    flex-wrap: wrap
+    align-content: flex-start
+    &__image-cards
+      margin-right: auto
   .modal
     &__dialog
       padding: 25px 30px
@@ -321,17 +340,43 @@
       align-items: start
     &__button
       margin-bottom: 15px
-  .bottom
+  // .bottom
+  //   flex-direction: column
+
     &__link
       font-size: 11px
 
 @media ( max-width: 390px )
+  .container
+    padding-left: 10px
+    padding-right: 10px
+  .booking
+    height: 210px
+
+  &__button
+    height: 45px
   .navbar
     &-top
       height: 70px
     &-menu
       &--visible
         top: 70px
+  .newsletter
+    padding-top: 35px
+    padding-bottom: 87px
+    &-title
+      font-size: 20px
+    &-title
+      &__strong
+        font-size: 30px
+  .hotel
+    padding-bottom: 30px
+    &__small-cards
+      min-height: 435px
+    &-slider
+      height: 179px
+  .reviews
+    padding-bottom: 9px
   .subscribe__form
     width: 250px
   .activities
@@ -339,6 +384,11 @@
       font-size: 18px
       line-height: 23px
   .footer
+    padding-top: 50px
+    &-wrapper
+      grid-row-gap: 29px
+    &__item--mb-2
+      margin-bottom: 10px
     &__social
       &-network
         max-width: 250px
@@ -353,6 +403,7 @@
         max-width: 250px
       &-form
         max-width: 280px
+        max-height: 386px
     &__form
       margin-bottom: 30px
     &__button
@@ -363,11 +414,20 @@
       flex-direction: column
       flex-wrap: wrap
       align-items: flex-start
+    &__legal
+      grid-row: 3
+    &__additional
+      grid-row: 4
+    &__categories
+      grid-row: 5
+    &__input-group
+      flex-basis: 100%
   .bottom
-    &__list
-      flex-direction: column
-    &__item
-      margin-bottom: 10px
+    margin-top: 20px
+    &__link
+      font-size: 10px
+      margin-right: 15px
+
   .modal
     &__dialog
-      padding: 15px 20px
+      padding: 25px 55px

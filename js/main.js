@@ -50,6 +50,7 @@ closeModalButton.on("click", closeModal);
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    
   }
   
    function closeModal(event) {
