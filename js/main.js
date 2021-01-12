@@ -34,11 +34,21 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 });
 
 var menuButton = $(".menu-button");
-menuButton.on('click', function() {
-  
-  $(".navbar-bottom").toggleClass('navbar-bottom--visible');
+menuButton.on("click", openMenu);
+ 
 
-});
+ 
+  function openMenu () {
+    $(".navbar-bottom").toggleClass('navbar-bottom--visible');
+    $("body").toggleClass("hidden");
+
+  };
+  
+  
+
+
+
+
 
 var modalButton = $("[data-toggle=modal]");
 var closeModalButton = $(".modal__close");
@@ -99,3 +109,5 @@ closeModalButton.on("click", closeModal);
 
   $(".phone-input").mask("+7 (000) 000-00-00");
 });
+
+AOS.init();

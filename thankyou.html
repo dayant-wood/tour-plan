@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -153,6 +155,16 @@
             <p class="hotel-description hotel-info__description">
               We will contact You shortly.
             </p>
+
+            <a href="index.html"
+              ><button
+                class="button"
+                style="margin-top: 20px"
+                onclick="main.back();"
+              >
+                Return to main page
+              </button></a
+            >
           </div>
           <!-- /.hotel-info__text-->
         </div>
@@ -167,11 +179,12 @@
     <section class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__anchor">
+            <img
+              src="img/vertical-logo.svg"
+              alt="logo: Best Tour Plan"
+              class="logo footer__logo"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
