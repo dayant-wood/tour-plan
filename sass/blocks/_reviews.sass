@@ -39,7 +39,7 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 45%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -53,23 +53,23 @@
       outline: none
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 14px
 
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        right: 14px
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 19px
+      margin-bottom: 33px
     &__avatar
       width: 90px
       height: 90px
       object-fit: cover
       border-radius: 50%
-      margin-bottom: 9px
+      margin-bottom: -2px
     &__username
       font-style: normal
       font-weight: bold
@@ -93,3 +93,6 @@
       font-size: 12px
       line-height: 160%
       text-align: justify
+      margin: auto
+      overflow-y: auto
+      max-height: 118px
