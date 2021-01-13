@@ -53,6 +53,7 @@
   .newsletter
     padding-top: 53px
   .reviews
+    padding-top: 15px
     &__title
       font-size: 30px
       margin-bottom: 48px
@@ -64,6 +65,8 @@
     width: 340px
 
   .activities
+    padding-top: 45px
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -82,19 +85,28 @@
       grid-row: 1 / 2
       grid-column: span 2
       width: 104px
-      height: 120px
+      height: 104px
+      margin-left: -3px
+      margin-top: 21px
     &__social
       &-network
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-top: 38px
+        margin-left: -53px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
+      margin-top: 16px
     &__additional
       grid-column: span 2
+      margin-left: -38px
+      margin-top: 13px
     &__legal
       grid-column: span 2
+      margin-left: 19px
+      margin-top: 13px
     &__contact
       &-details
         grid-row: 3
@@ -114,6 +126,7 @@
     &__dialog
       padding-left: 50px
       padding-right: 50px
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -219,6 +232,7 @@
     &__title
       margin-bottom: 37px
   .reviews
+    padding-top: 15px
     &__title
       font-style: normal
       font-weight: bold
@@ -257,6 +271,17 @@
   .footer
     &__input
       font-size: 12px
+    &__additional
+      margin-left: 0
+    &-wrapper
+      grid-template-columns: repeat(7, 1fr)
+      grid-row-gap: 0px
+    &__logo
+      width: 60%
+      &-block
+        grid-column-start: 0
+        grid-column-end: 2
+        grid-row-start: 1
   .bottom
     flex-wrap: wrap
     &__image-cards
@@ -283,9 +308,7 @@
     padding-top: 0
     &-info
       margin-bottom: 18px
-    &-name
-      &__title
-        font-size: 22px
+
     &__slider
       margin-bottom: 20px
     &-slider
@@ -341,11 +364,14 @@
         grid-column: 1
     &__container
       justify-content: space-between
-      flex-direction: column
-      align-items: start
+      flex-direction: row
+      align-items: baseline
     &__button
       margin-bottom: 15px
-
+    &__social-network
+      display: flex
+      justify-content: space-between
+      margin-left: 0
 @media ( max-height: 487px )
   .modal
     &__dialog
@@ -452,7 +478,7 @@
     &__input-group
       flex-basis: 100%
   .bottom
-    margin-top: 15px
+    margin-top: 30px
     &__link
       font-size: 11.5px
 
@@ -471,3 +497,10 @@
     order: 1
   .card-4
     order: 4
+  .reviews-slider
+    &__button--next
+      margin-right: -88px
+    &__button--prev
+      margin-left: -92px
+    &__text
+      text-align: left
